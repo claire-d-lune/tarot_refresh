@@ -1,24 +1,33 @@
 import React from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { TarotCard } from './TarotCard'
 
 // import { imageObject } from '../assets/Cups/ImageCollection'
 
 const CardList = () => {
 
     type Card = {
-        type: string,
-        name_short: string,
-        name: string,
-        value: number,
-        value_int: number,
-        meaning_up: string,
-        meaning_rev: string,
+        arcana: string
+        name: string;
+        name_short: string;
+        value: string;
+        value_int: number;
+        meaning_up: string;
+        meaning_rev: string;
         desc: string
     }
+    
+    const [cardList, setCardList] = useState<Card[] |null>(null);
 
-    axios({url: 'cards', baseURL: "http:localhost:3000"}).then(res => console.log(res.data))
+    // let response: Card[]
+    useEffect(() => {
+        axios('/api/cards')
+        .then(res => setCardList([...res.data]))     
+    }, []);
+  
+    console.log(cardList)
 
     return(
         <div>

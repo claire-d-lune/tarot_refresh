@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000, // changed my outgoing port to 3000 instead of the default 5173
     proxy: {
         '/api': { 
-          target: 'http://127.0.0.1:3000/', 
+          target: 'http://127.0.0.1:4000/', 
           changeOrigin: true, 
           secure: false, 
           rewrite: (path) => path.replace(/^\/api/, "") // rewrite the path to remove the /api -- I think there's a prob with this line. I'll come back
