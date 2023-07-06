@@ -1,8 +1,7 @@
-import React from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { TarotCard } from './TarotCard'
+import TarotCard from "./TarotCard.tsx"
 
 // import { imageObject } from '../assets/Cups/ImageCollection'
 
@@ -20,19 +19,22 @@ const CardList = () => {
     }
     
     const [cardList, setCardList] = useState<Card[] |null>(null);
-
+    
     // let response: Card[]
     useEffect(() => {
         axios('/api/cards')
-        .then(res => setCardList([...res.data]))     
+        .then(res => setCardList([...res.data]))
     }, []);
   
-    console.log(cardList)
-
     return(
         <div>
             <Navbar/>
             <p> Hello From the Cardlist! </p>
+            <div className="flex mx-36">
+                <div className="grid grid-cols-3 left-1/5">
+                    {cardList ? cardList.map(e => <TarotCard details={e}/>):  null}
+                </div>
+            </div>
         </div>
         )
 

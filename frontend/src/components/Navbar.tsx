@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-base-100 outline-2 outline-black">
+        <div className="navbar bg-purple-400 outline-2 outline-black">
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">Tera's Card Library</a>
             </div>
