@@ -11,6 +11,7 @@ class CreateCards < ActiveRecord::Migration[7.0]
       t.string :meaning_rev
       t.string :description
       t.integer :deck_num
+      t.string :image_url
 
       t.timestamps
     end

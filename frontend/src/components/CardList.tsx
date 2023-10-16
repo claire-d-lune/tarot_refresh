@@ -8,14 +8,16 @@ import TarotCard from "./TarotCard.tsx"
 const CardList = () => {
 
     type Card = {
-        arcana: string
+        arcana: string;
+        suit: string;
         name: string;
         name_short: string;
         value: string;
         value_int: number;
+        image_url: string;
         meaning_up: string;
         meaning_rev: string;
-        desc: string
+        description: string
     }
     
     const [cardList, setCardList] = useState<Card[] |null>(null);
@@ -25,18 +27,26 @@ const CardList = () => {
         axios('/api/cards')
         .then(res => setCardList([...res.data]))
     }, []);
+
+    console.log(cardList)
   
     return(
         <div>
             <Navbar/>
             <p> Hello From the Cardlist! </p>
-            <div className="flex mx-36">
-                <div className="grid grid-cols-3 left-1/5">
-                    {cardList ? cardList.map(e => <TarotCard details={e}/>):  null}
-                </div>
+            <div>
+                {cardList ? cardList.map(cardDetails => <TarotCard {...cardDetails}/>):  null}
             </div>
         </div>
         )
+
+    // Building card filter. 
+    const [filterSettings, setFilterSettings] = useState(["","any"])
+    
+    const handleCategory = (e) => {
+        console.log(e)
+    }
+    
 
 }
 

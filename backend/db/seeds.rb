@@ -1,5 +1,6 @@
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar01",
 name: "The Magician",
 value: "1",
@@ -11,6 +12,7 @@ description: "A youthful figure in the robe of a magician, having the countenanc
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar02",
 name: "The High Priestess",
 value: "2",
@@ -22,6 +24,7 @@ description: "She has the lunar crescent at her feet, a horned diadem on her hea
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar03",
 name: "The Empress",
 value: "3",
@@ -33,6 +36,7 @@ description: "A stately figure, seated, having rich vestments and royal aspect, 
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar04",
 name: "The Emperor",
 value: "4",
@@ -44,6 +48,7 @@ description: "He has a form of the Crux ansata for his sceptre and a globe in hi
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar05",
 name: "The Hierophant",
 value: "5",
@@ -55,6 +60,7 @@ description: "He wears the triple crown and is seated between two pillars, but t
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar06",
 name: "The Lovers",
 value: "6",
@@ -66,6 +72,7 @@ description: "The sun shines in the zenith, and beneath is a great winged figure
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar07",
 name: "The Chariot",
 value: "7",
@@ -77,6 +84,7 @@ description: "An erect and princely figure carrying a drawn sword and correspond
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar08",
 name: "Fortitude",
 value: "8",
@@ -88,6 +96,7 @@ description: "A woman, over whose head there broods the same symbol of life whic
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar09",
 name: "The Hermit",
 value: "9",
@@ -99,6 +108,7 @@ description: "The variation from the conventional models in this card is only th
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar10",
 name: "Wheel Of Fortune",
 value: "10",
@@ -110,6 +120,7 @@ description: "In this symbol I have again followed the reconstruction of Élipha
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar11",
 name: "Justice",
 value: "11",
@@ -121,6 +132,7 @@ description: "As this card follows the traditional symbolism and carries above a
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar12",
 name: "The Hanged Man",
 value: "12",
@@ -132,6 +144,7 @@ description: "The gallows from which he is suspended forms a Tau cross, while th
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar13",
 name: "Death",
 value: "13",
@@ -143,6 +156,7 @@ description: "The veil or mask of life is perpetuated in change, transformation 
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar14",
 name: "Temperance",
 value: "14",
@@ -154,6 +168,7 @@ description: "A winged angel, with the sign of the sun upon his forehead and on 
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar15",
 name: "The Devil",
 value: "15",
@@ -165,6 +180,7 @@ description: "The design is an accommodation, mean or harmony, between several m
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar16",
 name: "The Tower",
 value: "16",
@@ -176,6 +192,7 @@ description: "Occult explanations attached to this card are meagre and mostly di
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar17",
 name: "The Star",
 value: "17",
@@ -187,6 +204,7 @@ description: "A great, radiant star of eight rays, surrounded by seven lesser st
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar18",
 name: "The Moon",
 value: "18",
@@ -198,6 +216,7 @@ description: "The distinction between this card and some of the conventional typ
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar19",
 name: "The Sun",
 value: "19",
@@ -209,6 +228,7 @@ description: "The naked child mounted on a white horse and displaying a red stan
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar20",
 name: "The Last Judgment",
 value: "20",
@@ -220,6 +240,7 @@ description: "I have said that this symbol is essentially invariable in all Taro
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar00",
 name: "The Fool",
 value: "ZERO",
@@ -231,6 +252,7 @@ description: "With light step, as if earth and its trammels had little power to 
 
 Card.create(
 arcana: "major",
+suit: "major",
 name_short: "ar21",
 name: "The World",
 value: "21",
